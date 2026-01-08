@@ -1,0 +1,13 @@
+name: ツィール
+profile:
+  age: '24'
+  age_detail: シャドウリングはやや寿命が長いので、外見年齢で見ると少女と言えなくもない。
+  sex:
+    body: 女性
+    identity: 女の子
+    target: 女性
+    detail: 攻めたら乱れてくれる人
+status:
+  alcohol:
+    value: '75'
+    detail: 行ける。割となんでも飲む。オラクルに転移するまでは相当に刹那的であったため、意図的に男を酔い潰して遊んでいたらしい。
