@@ -1,10 +1,11 @@
 name: ツーズー
+reading: "つーずー"
 aliases:
   - Tsuzu
 profile:
   appearance: 身長2mの隻眼の大女。筋肉質。
   personality: "- 酒: 100 (ザル)。凍った竹の酒が好き。\n- アタシは強さを追求する。"
-  age: '120'
+  age: "120"
   age_detail: エルフなので長寿。エルフの中では若い方になり、実際新進気鋭の英雄である。
   sex:
     body: 女性
@@ -13,7 +14,7 @@ profile:
     detail: 心根が強い男
 status:
   alcohol:
-    value: '100'
+    value: "100"
     detail: ザル。肝臓がひたすらに強い。割と何でも飲むが、冬期の凍った竹の節にできる酒を特に好む。
 background: "- バンブーエルフ。\n- 青竹を噛み砕くのが好き。"
 relations:
@@ -39,7 +40,7 @@ relations:
     content: アタシは強さを追求する。皆を守り、敵を調伏する強さをな。
   - target: ララモイ
     content: 大親友。以心伝心。戦場のパートナー。
-  - target: ツィール
+  - target: ツィールハフィー
     content: 正面から戦わぬ軟弱者だが、有力者ではある。恋について相談したい
   - target: 桜之宮なこ
     content: 友人のために簡単に命を捨てられる強者。……悪いとは思っている。

@@ -1,10 +1,11 @@
 name: 桜之宮なこ
+reading: "さくらのみやなこ"
 aliases:
   - Sakuranomiya Nako
 profile:
   appearance: 薄桃色のパーツ、新緑のヘッドギア。
   personality: "- 酒: 10。\n- 天使。可愛いし性格も良い。"
-  age: '35'
+  age: "35"
   age_detail: キャスト化したときに外見年齢が20程度で固定され、自我もそちらに引っ張られてしまっている。
   sex:
     body: 女性
@@ -35,7 +36,7 @@ relations:
     content: 「あの……アームの弁償とか……」「あン？　ああ、わかった（ドサッ）」「おかねもち……」
   - target: ララモイ
     content: 能力的にキャストの天敵。可愛い顔して腹黒い。
-  - target: ツィール
+  - target: ツィールハフィー
     content: 「わぁー♡　肌の質感が上品でかっこいいですね！」「ちょっ、近い近い！」
   - target: 桜之宮なこ
     content: トラブルはあったけど、なんとか生きていけそう。お金は相変わらず貯まらない。

@@ -1,7 +1,8 @@
 # キャラクター設定
 
 {% for char in characters %}
-## {{ char.name }}{% if char.aliases %} ({{ char.aliases | join(', ') }}){% endif %}
+## {{ char.name }}{% if char.reading %} ({{ char.reading }}){% endif %}
+### {% if char.aliases %}別名: {{ char.aliases | join(', ') }}{% endif %}
 - **二つ名**: {{ char.get('misc', {}).get('二つ名', '不明') }}
 - **年齢**: {{ char.get('profile', {}).get('age', '不明') }} ({{ char.get('profile', {}).get('age_detail', '') }})
 - **外見**: {{ char.get('profile', {}).get('appearance', '記述なし') }}

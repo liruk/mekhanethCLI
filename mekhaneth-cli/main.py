@@ -283,6 +283,9 @@ def build():
         with open(yaml_path, "r", encoding="utf-8") as f:
             characters.append(yaml.load(f))
     
+    # Sort characters by reading (if exists), then name
+    characters.sort(key=lambda c: (c.get("reading", c["name"]), c["name"]))
+
     # Generate characters.md
     template = env.get_template("characters.md.j2")
     output = template.render(characters=characters)
@@ -317,6 +320,25 @@ def build():
     click.echo(f"Generated {matrix_path}")
 
     click.echo("Build complete.")
+
+@cli.command()
+def add_reading():
+    """Add reading field to all character YAMLs if missing"""
+    for yaml_path in DATA_DIR.glob("*.yaml"):
+        with open(yaml_path, "r", encoding="utf-8") as f:
+            data = yaml.load(f)
+        
+        if "reading" not in data:
+            # Insert reading field after name
+            new_data = {}
+            for k, v in data.items():
+                new_data[k] = v
+                if k == "name":
+                    new_data["reading"] = ""
+            
+            with open(yaml_path, "w", encoding="utf-8") as f:
+                yaml.dump(new_data, f)
+            click.echo(f"Added reading field to {yaml_path.name}")
 
 if __name__ == "__main__":
     cli()

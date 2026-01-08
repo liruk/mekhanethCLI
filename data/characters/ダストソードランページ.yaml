@@ -1,9 +1,10 @@
 name: ダスト・ソードランページ
+reading: "だすと・そーどらんぺーじ"
 aliases:
   - Dust Sword-rampage
 profile:
   appearance: フェミニンな男。
-  personality: '- 私は罪悪感を抱えている。'
+  personality: "- 私は罪悪感を抱えている。"
   sex:
     body: 男性
     identity: 男性（オカマ）
@@ -33,7 +34,7 @@ relations:
     content: 異世界の猛者。身にまとうオーラが違う。咬合力まで一流。
   - target: ララモイ
     content: あれからいつもおいしいポテサラを提供してくれてありがとう！　めっちゃ美味いよ！
-  - target: ツィール
+  - target: ツィールハフィー
     content: らんが色を知った間接的な原因。倫理が壊れている。
   - target: 桜之宮なこ
     content: 地球人、こんな美人さんを放っておくなんて。あの星の恋愛環境、修羅い。

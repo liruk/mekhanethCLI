@@ -1,10 +1,11 @@
 name: ララモイ
+reading: "ららもい"
 aliases:
   - Laramoi
 profile:
   appearance: 小柄。ぶかぶかの割烹着。
   personality: "- 酒: 70。芋酒以外飲まない。\n- 小凪葉との仲を応援している。"
-  age: '300'
+  age: "300"
   age_detail: エルフなので長寿。土に植えることで殖える。この株になってからは5年ほどしか経過していない。
   sex:
     body: 女性
@@ -13,7 +14,7 @@ profile:
     detail: 株分けして増える種族であるため、特になし。
 status:
   alcohol:
-    value: '70'
+    value: "70"
     detail: 割と行けるが、芋からできた酒以外はほとんど飲まない。ツーズーに何度か酔い潰されている。
 background: "- ポテサラエルフ。\n- 語尾が「ゆ」。"
 relations:
@@ -39,7 +40,7 @@ relations:
     content: 大親友。以心伝心。推し。そろそろ子供の顔が見たい。
   - target: ララモイ
     content: 元の世界でやることなくなったし、ツーズーと一緒に色々やゆ。ポテサヤ食べゆ？
-  - target: ツィール
+  - target: ツィールハフィー
     content: ぽてちの文化とおまえの文化を交換すゆ。ケバブをハムにすゆ。
   - target: 桜之宮なこ
     content: ツーズーの投げ槍を正面から受けた時は驚いた。ポテサラ作るのは下手。火山灰っぽい

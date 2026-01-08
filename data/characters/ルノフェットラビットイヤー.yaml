@@ -1,6 +1,7 @@
 name: ルノフェット・ラビットイヤー
+reading: "るのふぇっと・らびっといやー"
 aliases:
-  - Runofet Rabbit-ear
+  - Runophet Rabbit-ear
 profile:
   appearance: うさみみメイドコスの少年 (男の娘)。
   personality: "- できれば昔みたいに愛してほしいけど、先輩が幸せならそれでいい。"
@@ -33,7 +34,7 @@ relations:
     content: チームの怖い人二号。悪い人ではないが、敵を仕留める際の容赦なさを見て漏らしそうになった
   - target: ララモイ
     content: チームの怖い人三号。彼女がニヤリと笑った時、相手には不幸が降り注ぐ。
-  - target: ツィール
+  - target: ツィールハフィー
     content: 可愛かった。とても相性がいい。また遊びたい。
   - target: 桜之宮なこ
     content: チームの怖い人四号。皆気づいてないけど、顔を見ただけで秘密が全部バレるのは怖い。秘密まみれなので

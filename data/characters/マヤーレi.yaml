@@ -1,10 +1,11 @@
 name: マヤーレI
+reading: "まやーれ・いんふりあ"
 aliases:
   - Mayale I
 profile:
   appearance: 薄群青のショートヘア。
   personality: "- 料理: 皆が食べさせたがるので厨房に立たない。\n- 酒: 0。止められている。\n- この世界はおもしろい！"
-  age: '0.5'
+  age: "0.5"
   age_detail: らんの幻創体であり、法的には生後6ヶ月。外見と精神の年齢は10才程度。
   sex:
     body: 女性
@@ -13,7 +14,7 @@ profile:
     detail: まだよくわかっていない
 status:
   alcohol:
-    value: '0'
+    value: "0"
     detail: まだ子供なのでらんに止められている。「わたしはらんの幻創体なのに！　ずるい！」とは本人の弁。
 background: "- らんの幻創体。\n- 辛いものが好き (5辛はいける)。"
 relations:
@@ -39,7 +40,7 @@ relations:
     content: 体の大きいお姉ちゃん。たまによじ登る
   - target: ララモイ
     content: おいもの料理がとっても上手なひと！
-  - target: ツィール
+  - target: ツィールハフィー
     content: 影が人間になったみたいなかわいいおねえさん！
   - target: 桜之宮なこ
     content: 「あ゛ー」「あの、私の後ろで何を？」「おしりのファンから出てくる風がきもちい」「めっ！」
