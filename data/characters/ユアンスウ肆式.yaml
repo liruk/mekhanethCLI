@@ -4,7 +4,7 @@ aliases:
   - Yuansu Type-4
 profile:
   appearance: 男のキャスト。ホバー移動。
-  personality: "- 料理: 卒なくこなす。軽食が得意。\n- 酒: 80 (通常40)。モジュールで伸びる。\n- コーヒーの腕前を上げたい。"
+  personality: "コーヒーの腕前を上げたい。"
   age: "1.5"
   age_detail: 生後18ヶ月。スキップ博士の被造物なので、年をとってもそれほど影響がない。
   sex:
@@ -16,6 +16,9 @@ status:
   alcohol:
     value: "80"
     detail: 普段は40。アルコール分解モジュールを装着すると伸びる。カクテルが気になっている。
+  cooking:
+    value: "85"
+    detail: 卒なくこなす。軽食が得意。
 background: "- スキップ博士の被造物にして助手。\n- 元の世界では良家のご子息だった疑惑がある。"
 relations:
   - target: 小凪葉らん

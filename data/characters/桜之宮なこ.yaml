@@ -4,7 +4,7 @@ aliases:
   - Sakuranomiya Nako
 profile:
   appearance: 薄桃色のパーツ、新緑のヘッドギア。
-  personality: "- 酒: 10。\n- 天使。可愛いし性格も良い。"
+  personality: "天使。可愛いし性格も良い。"
   age: "35"
   age_detail: キャスト化したときに外見年齢が20程度で固定され、自我もそちらに引っ張られてしまっている。
   sex:
@@ -12,6 +12,10 @@ profile:
     identity: 女性（メカ）
     target: 女性
     detail: あんまり興味ないかな……。
+  status:
+    alcohol:
+      value: "10"
+      detail: 普段は0。アルコール分解モジュールを装着すると伸びるが、ほぼ皆無。
 background: "- 情報屋。\n- 元は敵対勢力で情報を操っていた。\n- 赤貧。"
 relations:
   - target: 小凪葉らん

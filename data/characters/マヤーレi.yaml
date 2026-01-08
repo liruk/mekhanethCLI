@@ -4,7 +4,7 @@ aliases:
   - Mayale I
 profile:
   appearance: 薄群青のショートヘア。
-  personality: "- 料理: 皆が食べさせたがるので厨房に立たない。\n- 酒: 0。止められている。\n- この世界はおもしろい！"
+  personality: "この世界はおもしろい！"
   age: "0.5"
   age_detail: らんの幻創体であり、法的には生後6ヶ月。外見と精神の年齢は10才程度。
   sex:
@@ -16,6 +16,9 @@ status:
   alcohol:
     value: "0"
     detail: まだ子供なのでらんに止められている。「わたしはらんの幻創体なのに！　ずるい！」とは本人の弁。
+  cooking:
+    value: "0"
+    detail: 皆が食べさせたがので厨房に立たない。
 background: "- らんの幻創体。\n- 辛いものが好き (5辛はいける)。"
 relations:
   - target: 小凪葉らん

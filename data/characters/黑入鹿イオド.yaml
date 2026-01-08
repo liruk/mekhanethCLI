@@ -8,7 +8,7 @@ profile:
   age: "11"
   age_detail: 子供。らんに性癖を壊されており、可愛い自分でいたいため幼体固定を真剣に考えている。
   appearance: 巫女服の男の娘。
-  personality: "- 料理: 見様見真似で師匠をトレース。\n- 酒: 0。止められている。\n- 大好きなお師匠様！"
+  personality: "大好きなお師匠様！"
   sex:
     body: 男性
     identity: 女の子
@@ -18,6 +18,9 @@ status:
   alcohol:
     value: "0"
     detail: まだ子供なのでスパイスに止められている。
+  cooking:
+    value: "75"
+    detail: 見様見真似で師匠をトレース。
 background:
   "- カワイイスパイスの弟子。\n- 孤児院から拾われた。\n- ルノフェットとともに、異世界「カイムスフィア」に転移し、冒険している。\n\
   - 伴侶がカイムスフィアにいる。"

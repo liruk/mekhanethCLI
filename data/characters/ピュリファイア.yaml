@@ -4,7 +4,7 @@ aliases:
   - Purifier
 profile:
   appearance: 長身スレンダー。銀髪ドリル。
-  personality: "- 料理: カワイイスパイスの影響を受けて上手くなった。たまに事故る。\n- 酒: 80。比較的強い。ワイン好み。\n- 女の子を落とすためにキレイになりたい。"
+  personality: "女の子を落とすためにキレイになりたい。"
   age: "25"
   age_detail: 外見年齢相当。ヒューマンなので順当に成長し、順当に老いる。
   sex:
@@ -16,6 +16,9 @@ status:
   alcohol:
     value: "80"
     detail: 比較的強い。嗜み程度に飲み、ワインが特に好み。
+  cooking:
+    value: "85"
+    detail: カワイイスパイスの影響を受けて上手くなった。たまに事故る。
 background: "- チームとは別の枠組みで作られた組織の実質的リーダー。\n- 人の心を見透かす訓練を受けている。"
 relations:
   - target: 小凪葉らん
