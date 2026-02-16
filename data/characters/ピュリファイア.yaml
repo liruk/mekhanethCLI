@@ -19,6 +19,7 @@ status:
   cooking:
     value: "85"
     detail: カワイイスパイスの影響を受けて上手くなった。たまに事故る。
+    taste: 刺激的
 background: "- チームとは別の枠組みで作られた組織の実質的リーダー。\n- 人の心を見透かす訓練を受けている。"
 relations:
   - target: 小凪葉らん

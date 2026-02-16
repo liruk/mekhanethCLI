@@ -19,6 +19,7 @@ status:
   cooking:
     value: "65"
     detail: 極端に上手くはないが、大方の人を満足させられる。
+    taste: 味より見た目
 background: "- らんの恋人。\n- 独占欲が強い。\n- らんをリードして「最後まで行った」。"
 relations:
   - target: 小凪葉らん

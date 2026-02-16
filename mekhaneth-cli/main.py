@@ -148,7 +148,8 @@ def parse_csv_tables():
 @cli.command()
 def migrate():
     """Migrate characters.md and CSVs to YAML"""
-    click.echo("Starting migration...")
+    click.echo("WARNING: This command is DEPRECATED and should not be used. It will overwrite existing YAML files.")
+    return
     
     md_chars = parse_characters_md()
     csv_data = parse_csv_tables()

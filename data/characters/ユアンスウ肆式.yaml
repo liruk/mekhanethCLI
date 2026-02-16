@@ -19,6 +19,7 @@ status:
   cooking:
     value: "85"
     detail: 卒なくこなす。軽食が得意。
+    taste: 奥深いもの
 background: "- スキップ博士の被造物にして助手。\n- 元の世界では良家のご子息だった疑惑がある。"
 relations:
   - target: 小凪葉らん

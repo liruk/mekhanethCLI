@@ -19,6 +19,7 @@ status:
   cooking:
     value: "0"
     detail: 皆が食べさせたがので厨房に立たない。
+    taste: 子供舌
 background: "- らんの幻創体。\n- 辛いものが好き (5辛はいける)。"
 relations:
   - target: 小凪葉らん

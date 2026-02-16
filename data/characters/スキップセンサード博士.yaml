@@ -20,6 +20,7 @@ status:
   cooking:
     value: "100"
     detail: 鮮やかで奇妙に美味しい謎の物体ができる。
+    taste: 無機質
 background: "- 人外だが、中身は人間の老人程度。\n- ユアンスウ肆式の創造主。\n- 「正史」の観測者。"
 relations:
   - target: 小凪葉らん
