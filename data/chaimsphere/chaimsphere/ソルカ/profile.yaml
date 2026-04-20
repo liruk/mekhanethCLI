@@ -1,0 +1,41 @@
+name: ソルカ
+reading: そるか
+aliases:
+- ソルカ・レ・エルカ
+- Solka
+profile:
+  age: 10代後半
+  appearance: 小柄なハーピィの少年。翼と鉤爪を持つ。
+  personality: 生意気で軽口が多いが、勝負事には真剣。面倒見も意外と良い。
+  ability:
+  - 高速剣技
+  - 飛行戦
+  - 短距離テレポート
+  speech_style: 歯切れが良く、挑発的。少年らしい勢いがある。
+background:
+- 聖都生まれのハーピィ剣士。
+- 闘技場でルノフェンと戦った後、旅に加わった。
+relations:
+- target: ルノフェン
+  content: 戦って負けた相手。腐れ縁めいた相棒。
+- target: グレーヴァ / 仙月
+  content: 実力を認めつつも、軽口を叩きあう仲。
+voice_design:
+  group: Chaimsphere/chapter1_2
+  base_style_prompt: 小柄なハーピィの少年剣士。生意気で機敏、口が回る。よく通る少年声で、挑発的な笑みが似合う。
+  style_variants:
+  - 落ち着いて聞き取りやすく、抑揚を丁寧につける。
+  - やや感情を強めに乗せ、キャラクターらしい表情をはっきり出す。
+  - 近い距離で語りかけるように、息遣いを少しだけ柔らかくする。
+  sample_text: オレはソルカ。空も地上も関係ねえよ。速さで置いていかれたくなかったら、ちゃんとついてこい。
+source:
+  chapters:
+  - chapter1
+  - chapter2
+  evidence:
+  - chapter4/chapter1/08.md:13-18
+  - chapter4/chapter1/10.md:12-15
+  - chapter4/chapter1/10.md:37-38
+misc:
+  stage: chapter1-2
+  notes: 空中機動に優れる剣士。

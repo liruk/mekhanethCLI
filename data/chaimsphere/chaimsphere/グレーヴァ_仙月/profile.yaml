@@ -1,0 +1,42 @@
+name: グレーヴァ / 仙月
+reading: ぐれーゔぁ しぇんゆぇ
+aliases:
+- グレーヴァ・ガルデ
+- 染仙月
+- 仙月
+profile:
+  age: 20代前半
+  appearance: 鬼人の女侍。上品な所作と武人らしい体幹をあわせ持つ。
+  personality: 普段は気さくで押しに弱いが、根は名家育ちで責任感が強い。
+  ability:
+  - 太刀術
+  - 炎を帯びた範囲斬撃
+  - 高い格闘センス
+  speech_style: 姉御肌の柔らかさと、名家の気品が混ざる。緊張すると噛む。
+background:
+- 紫宸龍宮の名門・染家の出身。
+- 本名は染仙月だが、旅ではグレーヴァを名乗る。
+relations:
+- target: ソルカ
+  content: 模擬戦を交えた戦友。
+- target: オド
+  content: 信頼できる主として見ている。
+voice_design:
+  group: Chaimsphere/chapter1_4
+  base_style_prompt: 若い女侍。大人びた落ち着きと少し砕けた親しみがある。低めで艶のある女性声、戦闘時は鋭く締まる。
+  style_variants:
+  - 落ち着いて聞き取りやすく、抑揚を丁寧につける。
+  - やや感情を強めに乗せ、キャラクターらしい表情をはっきり出す。
+  - 近い距離で語りかけるように、息遣いを少しだけ柔らかくする。
+  sample_text: 拙はグレーヴァ。ああもう、また噛んだ……。まあいいや、刀の腕ならちゃんと見せてあげるよ。
+source:
+  chapters:
+  - chapter1
+  - chapter4
+  evidence:
+  - chapter4/chapter1/21.md:158-160
+  - chapter4/chapter1/22.md:31-38
+  - chapter4/13.md:68-77
+misc:
+  stage: chapter1-4
+  notes: 名門出身の半鬼人族。

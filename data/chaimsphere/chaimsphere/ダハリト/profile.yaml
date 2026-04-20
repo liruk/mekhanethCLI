@@ -1,0 +1,40 @@
+name: ダハリト
+reading: だはりと
+aliases:
+- Daharito
+profile:
+  age: 古竜
+  appearance: 人化した古竜。寒い場所ではもこもこに着込む。
+  personality: 尊大でわがままに見えるが、仲間には案外素直。怖いものにはしっかり怖がる。
+  ability:
+  - 炎のブレス
+  - 竜化
+  - 高い戦闘力
+  speech_style: のじゃ口調の年長者ボイス。高すぎず、愛嬌のある威厳。
+background:
+- 古竜ゆえの力と古い記憶を持つ。
+- 注射を怖がるなど、意外と子どもっぽい一面もある。
+relations:
+- target: オド
+  content: 主として認めつつ、気安く接する。
+- target: ディー
+  content: つい羽虫扱いする。
+voice_design:
+  group: Chaimsphere/chapter3_4
+  base_style_prompt: 人化した古竜。年長者らしい余裕とわがままが混ざる、のじゃ口調の声。少し丸みがあり愛嬌もある。
+  style_variants:
+  - 落ち着いて聞き取りやすく、抑揚を丁寧につける。
+  - やや感情を強めに乗せ、キャラクターらしい表情をはっきり出す。
+  - 近い距離で語りかけるように、息遣いを少しだけ柔らかくする。
+  sample_text: 余はダハリトじゃ。強いのは当然として、寒いのは苦手じゃぞ。だから温かいところに案内せい。
+source:
+  chapters:
+  - chapter3
+  - chapter4
+  evidence:
+  - chapter4/02.md:33-59
+  - chapter4/07.md:149-152
+  - chapter4/19.md:6-16
+misc:
+  stage: chapter3-4
+  notes: 威厳と可愛げの両立が重要。

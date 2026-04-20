@@ -1,0 +1,40 @@
+name: メア
+reading: めあ
+aliases:
+- メアフィオーラ・ブレーウィスト
+- Mear
+profile:
+  age: 若い女性
+  appearance: エルフの少女。魔術師然としたローブ姿。
+  personality: 臆病さはあるが、要所で冷静。自分を励ましながら前に進むタイプ。
+  ability:
+  - ディスペル
+  - 水属性魔法
+  - 後衛支援
+  speech_style: 澄んだ女性声。控えめだが、必要な時ははっきり話す。
+background:
+- 魔術の修練を志して家を飛び出した。
+- 監禁状態でも状況整理を忘れず、脱出の糸口を作る。
+relations:
+- target: フォボス
+  content: 脱出時に協力しあった相手。
+- target: ピリニャス
+  content: 後に保護と案内を受ける。
+voice_design:
+  group: Chaimsphere/chapter2
+  base_style_prompt: 若いエルフの魔術師。澄んでいて透明感のある女性声。怖がりだが知性的で、呪文詠唱はぶれない。
+  style_variants:
+  - 落ち着いて聞き取りやすく、抑揚を丁寧につける。
+  - やや感情を強めに乗せ、キャラクターらしい表情をはっきり出す。
+  - 近い距離で語りかけるように、息遣いを少しだけ柔らかくする。
+  sample_text: 私はメア。派手なことは苦手だけど、解呪と補助なら役に立てると思う。だから、落ち着いていこう。
+source:
+  chapters:
+  - chapter2
+  evidence:
+  - chapter4/chapter2/07.md:42-48
+  - chapter4/chapter2/08.md:42-49
+  - chapter4/chapter2/08.md:170-179
+misc:
+  stage: chapter2
+  notes: 詠唱時は少しだけ芯を強める。

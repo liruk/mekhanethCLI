@@ -12,16 +12,61 @@ yaml = YAML()
 yaml.indent(mapping=2, sequence=4, offset=2)
 yaml.preserve_quotes = True
 
-BASE_DIR = Path("d:/documents_D/創作箱/mekhanethCLI")
-DATA_DIR = BASE_DIR / "data/characters"
+BASE_DIR = Path(__file__).resolve().parent.parent
+DATA_ROOT = BASE_DIR / "data"
+BASE_SETTINGS_ROOT = BASE_DIR / "base-settings"
+NON_WORLD_DIRS = {"scales", "vocal_cords"}
+DEFAULT_WORLD_DIR = DATA_ROOT / "mekhaneth"
+DEFAULT_BASE_SETTINGS_DIR = BASE_SETTINGS_ROOT / "mekhaneth"
 
 @click.group()
 def cli():
     """Mekhaneth Character Data Management Tool"""
     pass
 
+def iter_character_yaml_paths():
+    """Collect character YAML files from each world directory under data/."""
+    if not DATA_ROOT.exists():
+        return []
+
+    yaml_paths = []
+    for child in DATA_ROOT.iterdir():
+        if not child.is_dir() or child.name in NON_WORLD_DIRS:
+            continue
+        yaml_paths.extend(path for path in child.rglob("*.yaml") if path.is_file())
+    return sorted(yaml_paths)
+
+def iter_world_dirs():
+    if not DATA_ROOT.exists():
+        return []
+    return sorted(
+        child for child in DATA_ROOT.iterdir()
+        if child.is_dir() and child.name not in NON_WORLD_DIRS
+    )
+
+def iter_character_yaml_paths_by_world():
+    world_map = {}
+    for world_dir in iter_world_dirs():
+        world_map[world_dir.name] = sorted(
+            path for path in world_dir.rglob("*.yaml") if path.is_file()
+        )
+    return world_map
+
+def normalize_markdown_value(value):
+    if isinstance(value, list):
+        return "\n".join(f"- {item}" for item in value)
+    return value
+
+def normalize_character(data):
+    if not isinstance(data, dict):
+        return data
+
+    normalized = dict(data)
+    normalized["background"] = normalize_markdown_value(normalized.get("background", ""))
+    return normalized
+
 def parse_characters_md():
-    md_path = BASE_DIR / "base-settings/characters.md"
+    md_path = DEFAULT_BASE_SETTINGS_DIR / "characters.md"
     if not md_path.exists():
         return {}
     
@@ -247,7 +292,7 @@ def migrate():
         # Remove chars that might be problematic in filenames
         char_id = re.sub(r'[^\w\-_]', '', char_id)
         
-        yaml_path = DATA_DIR / f"{char_id}.yaml"
+        yaml_path = DEFAULT_WORLD_DIR / f"{char_id}.yaml"
         
         # Final formatting
         output = {
@@ -273,59 +318,55 @@ def migrate():
 
 @cli.command()
 def build():
-    """Build characters.md and emotion matrix from YAML"""
+    """Build characters.md and emotion matrix for each world from YAML"""
     click.echo("Starting build...")
     
     env = Environment(loader=FileSystemLoader(str(BASE_DIR / "templates")))
-    
-    characters = []
-    # Sort files to maintain some order (e.g., alphabetic)
-    for yaml_path in sorted(DATA_DIR.glob("*.yaml")):
-        with open(yaml_path, "r", encoding="utf-8") as f:
-            characters.append(yaml.load(f))
-    
-    # Sort characters by reading (if exists), then name
-    characters.sort(key=lambda c: (c.get("reading", c["name"]), c["name"]))
-
-    # Generate characters.md
     template = env.get_template("characters.md.j2")
-    output = template.render(characters=characters)
-    
-    output_path = BASE_DIR / "base-settings/characters.md"
-    output_path.write_text(output, encoding="utf-8")
-    click.echo(f"Generated {output_path}")
 
-    # Generate Emotion Matrix (Markdown)
-    matrix_path = BASE_DIR / "base-settings/emotion_matrix.md"
-    
-    # Collect all names for the matrix
-    all_names = [c["name"] for c in characters]
-    
-    matrix_lines = []
-    header_line = "| → | " + " | ".join(all_names) + " |"
-    sep_line = "| --- | " + " | ".join(["---"] * len(all_names)) + " |"
-    matrix_lines.append(header_line)
-    matrix_lines.append(sep_line)
-    
-    for char in characters:
-        row = [f"**{char['name']}**"]
-        relations = {r["target"]: r["content"] for r in char.get("relations", [])}
-        for name in all_names:
-            content = relations.get(name, "-")
-            # Clean up newline for markdown table
-            content = content.replace("\n", "<br>")
-            row.append(content)
-        matrix_lines.append("| " + " | ".join(row) + " |")
-        
-    matrix_path.write_text("\n".join(matrix_lines), encoding="utf-8")
-    click.echo(f"Generated {matrix_path}")
+    for world_name, yaml_paths in iter_character_yaml_paths_by_world().items():
+        characters = []
+        for yaml_path in yaml_paths:
+            with open(yaml_path, "r", encoding="utf-8") as f:
+                characters.append(normalize_character(yaml.load(f)))
+
+        characters.sort(key=lambda c: (c.get("reading", c["name"]), c["name"]))
+
+        world_base_settings_dir = BASE_SETTINGS_ROOT / world_name
+        world_base_settings_dir.mkdir(parents=True, exist_ok=True)
+
+        output = template.render(characters=characters)
+        output_path = world_base_settings_dir / "characters.md"
+        output_path.write_text(output, encoding="utf-8")
+        click.echo(f"Generated {output_path}")
+
+        matrix_path = world_base_settings_dir / "emotion_matrix.md"
+        all_names = [c["name"] for c in characters]
+
+        matrix_lines = []
+        header_line = "| → | " + " | ".join(all_names) + " |"
+        sep_line = "| --- | " + " | ".join(["---"] * len(all_names)) + " |"
+        matrix_lines.append(header_line)
+        matrix_lines.append(sep_line)
+
+        for char in characters:
+            row = [f"**{char['name']}**"]
+            relations = {r["target"]: r["content"] for r in char.get("relations", [])}
+            for name in all_names:
+                content = relations.get(name, "-")
+                content = content.replace("\n", "<br>")
+                row.append(content)
+            matrix_lines.append("| " + " | ".join(row) + " |")
+
+        matrix_path.write_text("\n".join(matrix_lines), encoding="utf-8")
+        click.echo(f"Generated {matrix_path}")
 
     click.echo("Build complete.")
 
 @cli.command()
 def add_reading():
     """Add reading field to all character YAMLs if missing"""
-    for yaml_path in DATA_DIR.glob("*.yaml"):
+    for yaml_path in iter_character_yaml_paths():
         with open(yaml_path, "r", encoding="utf-8") as f:
             data = yaml.load(f)
         

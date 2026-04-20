@@ -1,0 +1,40 @@
+name: カラパ
+reading: からぱ
+aliases:
+- “マダラの毛皮”カラパ
+- Karapa
+profile:
+  age: 成人女性
+  appearance: 長身の大型獣人女性。軽装鎧と巨大なロングボウを使う。
+  personality: 柔和で礼儀正しいが、実戦では胆が据わっている。
+  ability:
+  - 巨弓
+  - 風魔法
+  - 長距離支援
+  speech_style: やわらかく上品な女性声。落ち着きがあり、安心感がある。
+background:
+- 南東戦線を戦い抜いた実力者で、白金級相当のタグを持つ。
+- クレオネスの婚約者として一行に加わる。
+relations:
+- target: クレオネス
+  content: 婚約者。自然に息が合う。
+- target: レシュ（成長後）
+  content: 年上の女性としてやさしく接する。
+voice_design:
+  group: Chaimsphere/chapter4
+  base_style_prompt: 長身の獣人女性。柔和で礼儀正しい、落ち着いた大人の女性声。戦場経験のある芯の強さを隠し持つ。
+  style_variants:
+  - 落ち着いて聞き取りやすく、抑揚を丁寧につける。
+  - やや感情を強めに乗せ、キャラクターらしい表情をはっきり出す。
+  - 近い距離で語りかけるように、息遣いを少しだけ柔らかくする。
+  sample_text: カラパです。前に出るのはクレオネスさんに任せますけど、後ろから支えるのは私の役目ですから。
+source:
+  chapters:
+  - chapter4
+  evidence:
+  - chapter4/01.md:24-28
+  - chapter4/01.md:39-46
+  - chapter4/04.md:61-61
+misc:
+  stage: chapter4
+  notes: 柔和さの中に軍人経験の芯を入れる。

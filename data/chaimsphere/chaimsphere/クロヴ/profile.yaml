@@ -1,0 +1,40 @@
+name: クロヴ
+reading: くろゔ
+aliases:
+- クロートーヴァ・ティンタナム
+- クロヴちゃん
+profile:
+  age: 若い女性
+  appearance: ビビッドピンクの髪をした小柄な少女。首輪とリードが特徴的。
+  personality: 口は悪いが陽気。研究バカで勢いがあり、荒事にも強い。
+  ability:
+  - 魔導具開発
+  - 収納魔法
+  - 実戦補助
+  speech_style: ボーイッシュで粗め。勢いでまくしたてる。
+background:
+- 魔導具研究で破産し、三年前にピリに買い取られた。
+- 資源さえあれば仕事はきっちりこなす現場担当。
+relations:
+- target: ピリニャス
+  content: 雇い主であり相棒。文句を言いつつ信頼している。
+- target: フォボス
+  content: 送り届けるべき子として励ます。
+voice_design:
+  group: Chaimsphere/chapter2
+  base_style_prompt: 口の悪いボーイッシュな少女。少しハスキーで元気、粗野だが憎めない。テンポの速い女声。
+  style_variants:
+  - 落ち着いて聞き取りやすく、抑揚を丁寧につける。
+  - やや感情を強めに乗せ、キャラクターらしい表情をはっきり出す。
+  - 近い距離で語りかけるように、息遣いを少しだけ柔らかくする。
+  sample_text: 俺様はクロヴ。細けぇ理屈はあとだ、まずは走って生き延びろ。道具と根性ならこっちで何とかしてやる。
+source:
+  chapters:
+  - chapter2
+  evidence:
+  - chapter4/chapter2/14.md:46-49
+  - chapter4/chapter2/14.md:81-86
+  - chapter4/chapter2/16.md:16-18
+misc:
+  stage: chapter2
+  notes: 魔導具オタク気質の前衛寄りサポーター。

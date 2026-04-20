@@ -1,0 +1,40 @@
+name: オド
+reading: おど
+aliases:
+- オド・クロイルカ
+- Odo
+profile:
+  age: 10代後半
+  appearance: 小柄な少年。学ラン姿のことが多く、まだ酒が飲めない年頃。
+  personality: 礼儀正しく素直。責任感が強いが、驚くと感情がそのまま声に出る。
+  ability:
+  - ヒーラー
+  - 司令塔
+  - 強い魔力を持つ
+  speech_style: 基本は丁寧でまっすぐ。動揺すると早口で高めになる。
+background:
+- 魔王討伐後に放浪騎士を拝命した。
+- 仲間の面倒見がよく、カイムスフィアの基盤メンテナンス任務にも就く。
+relations:
+- target: レシュ（成長後）
+  content: もっとも近しい相手。過保護なくらい気にかける。
+- target: クレオネス
+  content: 頼れる前衛として信頼している。
+voice_design:
+  group: Chaimsphere/chapter4
+  base_style_prompt: 10代後半の小柄な少年。礼儀正しく素直で、驚くと少し高めに裏返る。柔らかいが芯のある主人公声。
+  style_variants:
+  - 落ち着いて聞き取りやすく、抑揚を丁寧につける。
+  - やや感情を強めに乗せ、キャラクターらしい表情をはっきり出す。
+  - 近い距離で語りかけるように、息遣いを少しだけ柔らかくする。
+  sample_text: オドです。放浪騎士の仕事も増えてきたけど、まずはみんなが無事でいられるように頑張るよ。
+source:
+  chapters:
+  - chapter4
+  evidence:
+  - chapter4/01.md:8-14
+  - chapter4/01.md:96-104
+  - chapter4/03.md:61-64
+misc:
+  stage: chapter4
+  notes: 未成年で酒が飲めない。

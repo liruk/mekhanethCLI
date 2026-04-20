@@ -1,0 +1,39 @@
+name: クレオネス
+reading: くれおねす
+aliases:
+- Cleones
+profile:
+  age: 20代前半
+  appearance: 若い象のタウロス。四メートル級の巨体と落ち着いた佇まい。
+  personality: 誠実で朴訥。照れ屋だが、守るべきものの前では非常に頼もしい。
+  ability:
+  - 大盾
+  - 大槌
+  - 前衛防御
+  speech_style: 低く太いが穏やか。口数は少なめ。
+background:
+- オドの仲間で、結婚を控えた若いタウロス。
+- 獣人狩りとの戦いを経てなお、集落の象徴的存在であり続ける。
+relations:
+- target: カラパ
+  content: 婚約者。背中を預け合う相手。
+- target: オド
+  content: 主として敬意を払っている。
+voice_design:
+  group: Chaimsphere/chapter4
+  base_style_prompt: 若い巨躯のタウロス。低く重厚だが威圧的すぎず、誠実さが前に出る男声。照れた時は少しぎこちない。
+  style_variants:
+  - 落ち着いて聞き取りやすく、抑揚を丁寧につける。
+  - やや感情を強めに乗せ、キャラクターらしい表情をはっきり出す。
+  - 近い距離で語りかけるように、息遣いを少しだけ柔らかくする。
+  sample_text: クレオネスだ。己は前に立つことしか得意ではないが、仲間を守る役目なら誰にも譲らない。
+source:
+  chapters:
+  - chapter4
+  evidence:
+  - chapter4/01.md:165-172
+  - chapter4/03.md:204-206
+  - chapter4/04.md:97-109
+misc:
+  stage: chapter4
+  notes: 大盾と大槌を扱うタンク役。

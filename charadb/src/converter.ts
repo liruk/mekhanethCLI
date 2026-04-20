@@ -3,7 +3,8 @@ import * as path from 'path';
 import * as yaml from 'js-yaml';
 import { createDatabase } from './schema';
 
-const YAML_DIR = path.join(__dirname, '..', '..', 'data', 'characters');
+const DATA_ROOT = path.join(__dirname, '..', '..', 'data');
+const NON_WORLD_DIRS = new Set(['scales', 'vocal_cords']);
 
 interface CharacterYaml {
   name: string;
@@ -43,6 +44,42 @@ function parseAbility(ability: { [key: string]: string } | string): { name: stri
   }
   const [name, detail] = Object.entries(ability)[0];
   return { name, detail };
+}
+
+function collectYamlFiles(dir: string): string[] {
+  const entries = fs.readdirSync(dir, { withFileTypes: true });
+  const files: string[] = [];
+
+  for (const entry of entries) {
+    const fullPath = path.join(dir, entry.name);
+    if (entry.isDirectory()) {
+      files.push(...collectYamlFiles(fullPath));
+      continue;
+    }
+    if (entry.isFile() && entry.name.endsWith('.yaml')) {
+      files.push(fullPath);
+    }
+  }
+
+  return files;
+}
+
+function getCharacterYamlFiles(): string[] {
+  const worldDirs = fs.readdirSync(DATA_ROOT, { withFileTypes: true })
+    .filter(entry => entry.isDirectory() && !NON_WORLD_DIRS.has(entry.name))
+    .map(entry => path.join(DATA_ROOT, entry.name));
+
+  return worldDirs.flatMap(collectYamlFiles).sort();
+}
+
+function normalizeText(value: unknown): string | null {
+  if (Array.isArray(value)) {
+    return value.map(item => `- ${String(item)}`).join('\n');
+  }
+  if (typeof value === 'string') {
+    return value;
+  }
+  return value == null ? null : String(value);
 }
 
 function convertYamlToDb() {
@@ -88,7 +125,7 @@ function convertYamlToDb() {
     VALUES (?, ?, ?)
   `);
 
-  const files = fs.readdirSync(YAML_DIR).filter(f => f.endsWith('.yaml'));
+  const files = getCharacterYamlFiles();
   
   const insertAll = db.transaction((characters: CharacterYaml[]) => {
     for (const char of characters) {
@@ -102,7 +139,7 @@ function convertYamlToDb() {
         profile.personality || null,
         profile.age || null,
         profile.age_detail || null,
-        char.background || null,
+        normalizeText(char.background),
         sex.body || null,
         sex.identity || null,
         sex.target || null,
@@ -151,8 +188,7 @@ function convertYamlToDb() {
   });
 
   const characters: CharacterYaml[] = [];
-  for (const file of files) {
-    const filePath = path.join(YAML_DIR, file);
+  for (const filePath of files) {
     const content = fs.readFileSync(filePath, 'utf-8');
     const char = yaml.load(content) as CharacterYaml;
     characters.push(char);

@@ -1,0 +1,39 @@
+name: フォボス
+reading: ふぉぼす
+aliases:
+- フォボスくん
+- Phobos
+profile:
+  age: 幼い少年
+  appearance: リス耳と尻尾を持つ小柄な獣人の少年。
+  personality: 極めて純真で臆病。怖がりだが、人を信じる力は強い。
+  ability:
+  - 身軽な移動
+  - 素直な行動力
+  speech_style: 幼く高め。泣きが入りやすく、感情がそのまま乗る。
+background:
+- 奴隷集落で育ち、集落崩壊後にルゥによって蘇生された。
+- 幼さゆえに恐怖へ敏感だが、そのぶん懐きやすい。
+relations:
+- target: ルゥ
+  content: 肉体を共有する精霊。奇妙な共生関係。
+- target: メア
+  content: 一緒に危地を抜けた相手。
+voice_design:
+  group: Chaimsphere/chapter2
+  base_style_prompt: 幼い獣人の少年。おどおどしていて小動物のように可愛い。高く細い声で、泣きそうな震えが混ざる。
+  style_variants:
+  - 落ち着いて聞き取りやすく、抑揚を丁寧につける。
+  - やや感情を強めに乗せ、キャラクターらしい表情をはっきり出す。
+  - 近い距離で語りかけるように、息遣いを少しだけ柔らかくする。
+  sample_text: ぼ、ぼくはフォボス。こわいのは苦手だけど……ちゃんとがんばる。だから、置いていかないでね。
+source:
+  chapters:
+  - chapter2
+  evidence:
+  - chapter4/chapter2/01.md:8-10
+  - chapter4/chapter2/02.md:98-104
+  - chapter4/chapter2/04.md:59-78
+misc:
+  stage: chapter2
+  notes: ルゥの影響を受ける前の地声を想定。

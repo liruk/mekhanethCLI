@@ -1,0 +1,41 @@
+name: アルム
+reading: あるむ
+aliases:
+- アルム少年
+- Arum
+profile:
+  age: 10代後半
+  appearance: 整った顔立ちの少年。白いコート姿が似合う。
+  personality: 頭の回転が速く、面倒見も良い。可愛らしい振る舞いと芯の強さが同居する。
+  ability:
+  - レジスタンス指揮
+  - 遺跡発掘
+  - 知識支援
+  speech_style: やわらかく親しみやすい。時折ずばっと本質を突く。
+background:
+- 預言者プラロへのレジスタンスを率いた少年。
+- 後にシュヴィルニャで遺跡発掘を取り仕切る。
+relations:
+- target: ルノフェン
+  content: 強く心酔している。
+- target: オド
+  content: 世話を焼きつつ、常識面でも助言する。
+voice_design:
+  group: Chaimsphere/chapter1_4
+  base_style_prompt: 中性的で整った少年。柔らかく甘いが、知性と現場感がある。やさしい口調で、時々いたずらっぽい。
+  style_variants:
+  - 落ち着いて聞き取りやすく、抑揚を丁寧につける。
+  - やや感情を強めに乗せ、キャラクターらしい表情をはっきり出す。
+  - 近い距離で語りかけるように、息遣いを少しだけ柔らかくする。
+  sample_text: アルムだよ。掘るのも教えるのも得意だから、困ったことがあったら遠慮なく呼んで。
+source:
+  chapters:
+  - chapter1
+  - chapter4
+  evidence:
+  - chapter4/chapter1/28.md:87-95
+  - chapter4/09.md:77-84
+  - chapter4/10.md:194-203
+misc:
+  stage: chapter1終盤-4
+  notes: 発掘と教育支援に強い。

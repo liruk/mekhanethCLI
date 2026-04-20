@@ -1,0 +1,41 @@
+name: ディー
+reading: でぃー
+aliases:
+- D
+- ディーくん
+profile:
+  age: 少年相当
+  appearance: 妖精族に見える小さな存在。顔色が悪く、ひどく軽い。
+  personality: 皮肉屋で観察眼が鋭い。隠密が得意で、どこか達観している。
+  ability:
+  - 隠密
+  - 飛行
+  - 神出鬼没な偵察
+  speech_style: 少しハスキーな少年声。軽口と本音の切り替えが速い。
+background:
+- 邪神の眷属だが、妖精族として振る舞っている。
+- オドたちの周囲を飛び回りながら、時に鋭い助言をする。
+relations:
+- target: オド
+  content: 肩に乗ることも多い同行者。
+- target: レシュ（成長後）
+  content: 恋愛相談めいたやり取りをする。
+voice_design:
+  group: Chaimsphere/chapter3_4
+  base_style_prompt: 小さな妖精めいた少年。ややハスキーで軽い声、皮肉っぽいが愛嬌もある。ささやきが似合う。
+  style_variants:
+  - 落ち着いて聞き取りやすく、抑揚を丁寧につける。
+  - やや感情を強めに乗せ、キャラクターらしい表情をはっきり出す。
+  - 近い距離で語りかけるように、息遣いを少しだけ柔らかくする。
+  sample_text: ぼくはディー。見た目で侮らないでよ。隠れるのも、空気を読むのも、こう見えて得意なんだから。
+source:
+  chapters:
+  - chapter3
+  - chapter4
+  evidence:
+  - chapter4/chapter3/03.md:211-237
+  - chapter4/02.md:109-110
+  - chapter4/07.md:156-157
+misc:
+  stage: chapter3-4
+  notes: 見た目は小さいが、声は聞き取りやすく。

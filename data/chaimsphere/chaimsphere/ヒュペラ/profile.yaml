@@ -1,0 +1,40 @@
+name: ヒュペラ
+reading: ひゅぺら
+aliases:
+- ヒュペラ・ザ＝サイプレス
+- Hyupera
+profile:
+  age: 若い女性
+  appearance: 褐色肌のドライアド。ハイビスカスのコサージュが印象的。
+  personality: 天真爛漫で奔放。恋愛感情が暴走しやすいが、知性と魔力は本物。
+  ability:
+  - 高い魔力量
+  - 政治的立場
+  - 奇襲と拘束
+  speech_style: 明るく甘い女性声。感情が乗ると妖しく熱を帯びる。
+background:
+- ミトラ＝ゲ＝テーア大統領の孫娘。
+- ルノフェンに執着しつつも、後には謝意や未練を見せる。
+relations:
+- target: ルノフェン
+  content: 情緒を壊されたと評する執着対象。
+- target: オド
+  content: 政治的にも注目している。
+voice_design:
+  group: Chaimsphere/chapter3
+  base_style_prompt: 天真爛漫で危うさもある若い女性。甘く華やかな声だが、内側に大きな魔力と執着が滲む。
+  style_variants:
+  - 落ち着いて聞き取りやすく、抑揚を丁寧につける。
+  - やや感情を強めに乗せ、キャラクターらしい表情をはっきり出す。
+  - 近い距離で語りかけるように、息遣いを少しだけ柔らかくする。
+  sample_text: 私はヒュペラ。ねえ、ちゃんと覚えてる？　ふふ、忘れていてもいいよ。今から思い出してもらうから。
+source:
+  chapters:
+  - chapter3
+  evidence:
+  - chapter4/chapter3/13.md:125-152
+  - chapter4/chapter3/14.md:16-24
+  - chapter4/40.md:24-26
+misc:
+  stage: chapter3
+  notes: 大統領の孫娘。

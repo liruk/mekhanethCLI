@@ -1,0 +1,40 @@
+name: レシュ（成長後）
+reading: れしゅ
+aliases:
+- レシュ
+- Reshu Mature
+profile:
+  age: 若い女性
+  appearance: 急速に成体化したラミア。体格も色気も大きく増した。
+  personality: 根の一途さはそのままに、包容力と色気が増す。
+  ability:
+  - 槍生成
+  - 高い身体能力
+  - 大型ラミアとしての制圧力
+  speech_style: 低さが少し増した艶のある女性声。甘さと勢いが同居する。
+background:
+- 特定条件を満たし、急速に成体へ変化した。
+- オドと暮らす中で、精神面も少女から一歩進んでいく。
+relations:
+- target: オド
+  content: 恋人同然の距離にいる。
+- target: ディー
+  content: からかわれつつも相談に乗られる。
+voice_design:
+  group: Chaimsphere/chapter4
+  base_style_prompt: 成長後のラミア女性。少し低めで艶のある声、一途さと包容力が増している。親しい相手には甘め。
+  style_variants:
+  - 落ち着いて聞き取りやすく、抑揚を丁寧につける。
+  - やや感情を強めに乗せ、キャラクターらしい表情をはっきり出す。
+  - 近い距離で語りかけるように、息遣いを少しだけ柔らかくする。
+  sample_text: レシュだよ。最近は身体も心もずいぶん変わったけど、オドの隣にいたいって気持ちは、前よりもっとはっきりしてる。
+source:
+  chapters:
+  - chapter4
+  evidence:
+  - chapter4/05.md:8-17
+  - chapter4/09.md:197-215
+  - chapter4/10.md:3-3
+misc:
+  stage: 成長後
+  notes: 少女声から艶のある若い女性声へ。

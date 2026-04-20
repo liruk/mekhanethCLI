@@ -1,0 +1,41 @@
+name: レシュ（成長前）
+reading: れしゅ
+aliases:
+- レシュ
+- Reshu
+profile:
+  age: 少女期
+  appearance: ラミアの少女。成長前でも全長三メートル級のしなやかな体躯。
+  personality: 好奇心旺盛で一途。オドへの好意がとても分かりやすい。
+  ability:
+  - 槍生成
+  - 高い身体能力
+  - 尾を活かした戦闘
+  speech_style: 少し勝ち気で明るい少女声。感情表現が素直。
+background:
+- オド一行に加わったラミアの少女。
+- 成長条件や生殖知識を知らないまま、変化の入口に立つ。
+relations:
+- target: オド
+  content: 一途に想いを寄せる相手。
+- target: クレオネス
+  content: 年上の仲間として頼る。
+voice_design:
+  group: Chaimsphere/chapter1_3
+  base_style_prompt: 成長前のラミア少女。明るく伸びのある少女声で、好奇心と一途さが前に出る。少し勝ち気。
+  style_variants:
+  - 落ち着いて聞き取りやすく、抑揚を丁寧につける。
+  - やや感情を強めに乗せ、キャラクターらしい表情をはっきり出す。
+  - 近い距離で語りかけるように、息遣いを少しだけ柔らかくする。
+  sample_text: アタシはレシュ。まだ知らないことは多いけど、オドと一緒なら、きっとなんとかなるって思ってる。
+source:
+  chapters:
+  - chapter1
+  - chapter3
+  evidence:
+  - chapter4/01.md:52-65
+  - chapter4/03.md:191-219
+  - chapter4/chapter3/03.md:195-198
+misc:
+  stage: 成長前
+  notes: まだ身体も声も少女寄り。

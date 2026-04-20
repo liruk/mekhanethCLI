@@ -4,19 +4,24 @@
 
 ## 構成
 
-- **`data/characters/*.yaml`**: キャラクター情報の「正解（Source of Truth）」です。
-- **`base-settings/characters.md`**: YAML から自動生成される閲覧用のドキュメントです。
-- **`base-settings/emotion_matrix.md`**: YAML から自動生成される相関図（感情表）です。
+- **`data/<world>/**/*.yaml`**: キャラクター情報の「正解（Source of Truth）」です。
+- **`data/mekhaneth/`** と **`data/chaimsphere/`**: 世界観ごとのキャラクターデータ置き場です。
+- **`data/vocal_cords/<world>/`**: 世界観ごとの音声リファレンス置き場です。
+- **`base-settings/<world>/`**: 世界観ごとの設定資料・生成ドキュメント置き場です。
+- **`base-settings/<world>/characters.md`**: YAML から自動生成される閲覧用のドキュメントです。
+- **`base-settings/<world>/emotion_matrix.md`**: YAML から自動生成される相関図（感情表）です。
 
 ## 基本的な使い方
 
 ### 1. キャラクター情報を編集する
 
-`data/characters/` 内にある各キャラクターの `.yaml` ファイルを直接編集してください。背景、外見、性格、他キャラクターへの感情などを記述できます。
+`data/<world>/` 配下にある各キャラクターの `.yaml` ファイルを直接編集してください。背景、外見、性格、他キャラクターへの感情などを記述できます。
+
+現在は `mekhaneth` と `chaimsphere` を同列の世界観ディレクトリとして扱います。
 
 ### 2. ドキュメントを更新する（同期）
 
-編集した内容を `characters.md` や `emotion_matrix.md` に反映させるには、以下のコマンドを実行します。
+編集した内容を各世界観の `base-settings/<world>/characters.md` や `base-settings/<world>/emotion_matrix.md` に反映させるには、以下のコマンドを実行します。
 
 ```powershell
 # CLIディレクトリへ移動
@@ -37,4 +42,4 @@ uv run python main.py build
 
 ## 注意事項
 
-> [!WARNING] > **手動編集の禁止**: `base-settings/characters.md` や `emotion_matrix.md` を手動で編集しないでください。ビルド時に YAML の内容で上書きされます。必ず `data/characters/` 以下の YAML ファイルを編集してください。
+> [!WARNING] > **手動編集の禁止**: `base-settings/<world>/characters.md` や `emotion_matrix.md` を手動で編集しないでください。ビルド時に YAML の内容で上書きされます。必ず `data/<world>/` 以下の YAML ファイルを編集してください。

@@ -1,0 +1,41 @@
+name: 麗梅恭
+reading: りめいごん
+aliases:
+- 麗梅恭《リメイゴン》
+- Rimeigon
+profile:
+  age: 壮年男性
+  appearance: 髭をたくわえた威圧感ある武人。薙刀の名手。
+  personality: 苛烈で強欲。だが戦士としての矜持もあり、真剣勝負を尊ぶ。
+  ability:
+  - 薙刀術
+  - 火矢
+  - 高位の武技
+  speech_style: 重く太い男声。圧が強く、断定的。
+background:
+- 麗家当主の兄で、巫后になれなかった実力者。
+- フォボスと神子の力を巡って暗躍するが、武人としての筋も通す。
+relations:
+- target: フォボス
+  content: 神子の力を宿す器として狙う。
+- target: ソルカ
+  content: 挑発と一騎討ちを交わした。
+voice_design:
+  group: Chaimsphere/chapter2_4
+  base_style_prompt: 威圧感のある壮年の武人。低く太い男声で、苛烈さと武人の誇りが同居する。語尾まで重心が落ちる。
+  style_variants:
+  - 落ち着いて聞き取りやすく、抑揚を丁寧につける。
+  - やや感情を強めに乗せ、キャラクターらしい表情をはっきり出す。
+  - 近い距離で語りかけるように、息遣いを少しだけ柔らかくする。
+  sample_text: 儂の名はリ・メイゴン。欲しいものは力ずくでも手に入れる。だが、戦うなら戦士らしく正面から来い。
+source:
+  chapters:
+  - chapter2
+  - chapter4
+  evidence:
+  - chapter4/chapter2/29.md:42-48
+  - chapter4/chapter2/36.md:70-79
+  - chapter4/39.md:237-237
+misc:
+  stage: chapter2-4
+  notes: 兄派閥の中心人物。

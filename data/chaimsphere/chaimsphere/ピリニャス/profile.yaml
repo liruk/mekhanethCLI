@@ -1,0 +1,40 @@
+name: ピリニャス
+reading: ぴりにゃす
+aliases:
+- ピリ
+- ピリニャス・ザ＝ヴァラニディア
+profile:
+  age: 成人女性
+  appearance: 樫ベースの樹妖族。緑の肌と葉を帯びた髪を持つ。
+  personality: 有能で秘密主義。世話焼きだが、ぶっきらぼうで腹が据わっている。
+  ability:
+  - 情報工作
+  - 交渉
+  - 現場判断
+  speech_style: 低めで落ち着いた姐御声。無駄なく話す。
+background:
+- ただの社畜と称するが、実際は広い後ろ盾と情報網を持つ。
+- フォボスを紫宸龍宮へ連れて行く役目を担う。
+relations:
+- target: クロヴ
+  content: 首輪付きの相棒。資金と実働を預ける。
+- target: フォボス
+  content: 保護対象として導く。
+voice_design:
+  group: Chaimsphere/chapter2
+  base_style_prompt: 落ち着いた大人のドライアド女性。低めで乾いた声、仕事ができる姐御の空気。感情は抑えめだが面倒見が良い。
+  style_variants:
+  - 落ち着いて聞き取りやすく、抑揚を丁寧につける。
+  - やや感情を強めに乗せ、キャラクターらしい表情をはっきり出す。
+  - 近い距離で語りかけるように、息遣いを少しだけ柔らかくする。
+  sample_text: アーシはピリニャス。事情は聞いてる。まずは生き残ること、それから話を進めること。順番は間違えないで。
+source:
+  chapters:
+  - chapter2
+  evidence:
+  - chapter4/chapter2/14.md:11-19
+  - chapter4/chapter2/15.md:179-180
+  - chapter4/chapter2/15.md:247-247
+misc:
+  stage: chapter2
+  notes: 料理以外の家事は万能。
